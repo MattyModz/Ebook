@@ -1,0 +1,159 @@
+:root {
+  --primary-color: #444bf7;
+  --secondary-color: #3ac280;
+  --font-inter: "Inter", sans-serif;
+}
+
+.header-button {
+  font-weight: 600;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+}
+
+.download-button {
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 1.25rem 2.5rem;
+}
+
+.submit-button {
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+  font-family: var(--font-inter);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  line-height: 2rem;
+  padding-right: 0;
+}
+
+input {
+  border: 1px solid #d4d9df;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  background-color: white;
+  color: #4d576b;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+
+input:hover {
+  border: 1px solid #acb1b7;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #444bf7;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+}
+
+input:focus:placeholder-shown {
+  border: 1px solid #444bf7;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input:valid {
+  border: 1px solid #acb1b7;
+}
+
+input:invalid {
+  border: 1px solid #e40000;
+  color: #e40000;
+}
+
+input.input-error {
+  border: 1px solid #e40000;
+  color: #4d576b;
+}
+
+input:disabled {
+  background-color: #f8f9fb;
+  border: 1px solid #d4d9df;
+  cursor: not-allowed;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  p {
+    padding-right: 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-family: var(--font-inter);
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    text-wrap: balance; /* New css property that auto balances the text between lines for best effect, usually id enforce the flow with <br/>, thought id give it a whirl  */
+    width: 100%;
+  }
+
+  .download-button {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 1.25rem 2.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  input {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  h2 {
+    font-size: 1.5rem;
+    font-family: var(--font-inter);
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    text-wrap: balance;
+    width: 100%;
+  }
+}

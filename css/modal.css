@@ -1,0 +1,131 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.modal.open {
+  opacity: 1;
+}
+
+.modal-content {
+  font-family: "Inter", sans-serif;
+  background-color: white;
+
+  padding: 4rem;
+  max-height: 560px;
+  max-width: 712px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: -1rem;
+  box-shadow: 0 0 64px 12px rgba(255, 225, 225, 0.2);
+  display: grid;
+
+  align-items: center;
+}
+
+.close-button {
+  border: none;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+  background-color: white;
+}
+.modal .title-text {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.modal .message-text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #4d576b;
+}
+
+.name-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.email-container {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #202938;
+}
+
+.button-and-message-container {
+  display: flex;
+  align-items: baseline;
+  color: #3ac280;
+}
+
+.button-and-message-container p {
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .name-container {
+    display: inline;
+    width: 100%;
+  }
+
+  .modal-content {
+    font-family: "Inter", sans-serif;
+    background-color: white;
+    height: max-content;
+    padding: 2rem;
+
+    max-height: none;
+    max-width: none;
+    box-shadow: 0 0 64px 12px rgba(255, 225, 225, 0.2);
+    display: grid;
+    margin: 1rem;
+    align-items: center;
+  }
+
+  .modal .title-text {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .button-and-message-container {
+    color: #3ac280;
+    display: block;
+  }
+}
